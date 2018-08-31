@@ -8,8 +8,12 @@
 
 API endpoint name: **room**
 
+
 ## Description of room entity
 An identified space at a provider where scheduled events for module instances can occur. May or may not be a specific "room", for example may be a flexible learning space.
+
+### DEV NOTES
+Consider renaming to "space".
 
 ## ROOM_ID
 ### Description
