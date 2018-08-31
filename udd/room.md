@@ -13,7 +13,8 @@ API endpoint name: **room**
 An identified space at a provider where scheduled events for module instances can occur. May or may not be a specific "room", for example may be a flexible learning space.
 
 ### DEV NOTES
-Consider renaming to "space".
+* Consider renaming to "space".
+* Consider adding optional lat/long attributes 
 
 ## ROOM_ID
 ### Description
