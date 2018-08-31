@@ -12,6 +12,11 @@ API endpoint name: **site**
 An identified location at the institution that collects together multiple 'rooms'; typically though not always a building; 
 this can also be a designated area within a building or building cluster.
 
+### DEV NOTES
+* Consider adding optional type attribute e.g. building, zone, floor, other...
+* Consider adding optional lat/long attributes
+* Consider adding optional bounding box attributes
+
 ## SITE_ID
 ### Description
 The identifier of the site as supplied by the provider, typically an identifier supplied from the timetable or building management system.
