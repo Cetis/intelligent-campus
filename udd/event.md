@@ -2,7 +2,7 @@
 * [EVENT_ID](#event_id) [1] **
 * [NAME](#name) [0..1]
 * [ROOM_ID](#room_id) [1]
-* [MODULE_INSTANCE_ID](#module_instance_id) [1]
+* [MOD_INSTANCE_ID](#mod_instance_id) [1]
 * [START_TIME](#start_time) [1]
 * [END_TIME](#end_time) [1]
 * [DAY_OF_WEEK](#day_of_week) [0..1]
