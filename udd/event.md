@@ -1,8 +1,8 @@
 # event
 * [EVENT_ID](#event_id) [1] **
 * [NAME](#name) [0..1]
-* [ROOM](#room) [1]
-* [MODULE_INSTANCE] (#module_instance) [1]
+* [ROOM_ID](#room_id) [1]
+* [MODULE_INSTANCE_ID](#module_instance_id) [1]
 * [START_TIME](#start_time) [1]
 * [END_TIME](#end_time) [1]
 * [DAY_OF_WEEK](#day_of_week) [0..1]
@@ -45,6 +45,43 @@ A human-readable name for the event
 For display purposes
 
 ### Derivation
+Jisc
+
+### Valid Value
+Any
+
+### Format
+String (255)
+
+### Notes
+
+## ROOM_ID
+### Description
+A link to the Room entity for this event.
+
+### Purpose
+To link relational database tables
+
+### Derivation
+Jisc
+
+### Valid Value
+Any
+
+### Format
+String (255)
+
+### Notes
+
+## MOD_INSTANCE_ID
+### Description
+A link to the Module Instance entity for this event.
+
+### Purpose
+To link relational database tables
+
+### Derivation
+Jisc
 
 ### Valid Value
 Any
