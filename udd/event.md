@@ -2,6 +2,7 @@
 * [EVENT_ID](#event_id) [1] **
 * [NAME](#name) [0..1]
 * [ROOM_ID](#room_id) [1]
+* [LAYOUT_ID](#layout_id) [0..1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [1]
 * [REQUESTED_CAPACITY](#requested_capacity) [0..1]
 * [START_TIME](#start_time) [1]
@@ -61,6 +62,22 @@ Any
 String (255)
 
 ### Notes
+
+## LAYOUT_ID
+### Description
+A link to the room layout used for the event.
+
+### Purpose
+To link relational database tables
+
+### Derivation
+Jisc
+
+### Valid Value
+Any
+
+### Format
+String (255)
 
 ## ROOM_ID
 ### Description
