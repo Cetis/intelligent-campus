@@ -7,7 +7,7 @@
 * [END_TIME](#end_time) [1]
 * [DAY_OF_WEEK](#day_of_week) [0..1]
 * [WEEKS](#weeks) [0..1]
-* [PERIOD](#period) [1]
+* [EVENT_PERIOD](#event_period) [1]
 * [PROVIDED_AT](#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -90,3 +90,23 @@ Any
 String (255)
 
 ### Notes
+
+## EVENT_PERIOD
+### Description
+Period to which event relates (e.g. semester 1)
+
+### Purpose
+Analytics
+
+### Derivation
+Jisc
+
+### Valid Values
+Each different code value in EVENT_PERIOD should have a matching code value in period.PERIOD_CODE.
+
+### Format
+String (255)
+
+### Notes
+It is expected that sites / organisations will have their own code lists for EVENT_PERIOD values.
+
