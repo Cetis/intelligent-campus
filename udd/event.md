@@ -91,6 +91,14 @@ String (255)
 
 ### Notes
 
+## START_TIME
+### Description
+Time when the event starts, in HH:MM format.
+
+## END_TIME
+### Description
+Time when the event ends, in HH:MM format.
+
 ## EVENT_PERIOD
 ### Description
 Period to which event relates (e.g. semester 1)
@@ -109,4 +117,39 @@ String (255)
 
 ### Notes
 It is expected that sites / organisations will have their own code lists for EVENT_PERIOD values.
+
+## DAY_OF_WEEK
+### Description
+The day of the week to which the event applies, if it is a recurring event. Where an event occurs on multiple days per week, use 
+additional EVENT instances.
+
+### Derivation
+CELCAT
+
+### Valid Values
+Week days in lowercase; one of "monday","tuesday","wednesday","thursday","friday","saturday","sunday".
+
+### Format
+String (9)
+
+### Notes
+Where no day of week is given, the event is assumed to take place on all days within the period specified.
+
+## WEEKS
+### Description
+The weeks of the period on which the event occurs, if it is a recurring event.
+
+### Derivation
+CELCAT
+
+### Valid Values
+A string of letters 'Y' and 'N' signifying whether the event applies in the week. For example: "YYYYYNNNYYYNNNY"
+
+### Format
+String (255)
+
+### Notes
+Where no weeks are given, the event is assumed to take place on all weeks within the period specified.
+
+
 
