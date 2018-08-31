@@ -10,11 +10,16 @@ API endpoint name: **room**
 
 
 ## Description of room entity
-An identified space at a provider where scheduled events for module instances can occur. May or may not be a specific "room", for example may be a flexible learning space.
+An identified space at a provider where scheduled events for module instances can occur. May or may not be a specific "room", for example may be a flexible learning space. 
+
+### Implementation Notes
+* In Clocks/Scientia, this is equivalent to a _zone_
+* In CELCAT, this is equivalent to a _room_
 
 ### DEV NOTES
 * Consider renaming to "space".
 * Consider adding optional lat/long attributes 
+* Consider adding optional capacity value
 
 ## ROOM_ID
 ### Description
