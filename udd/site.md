@@ -13,7 +13,7 @@ An identified location at the institution that collects together multiple 'rooms
 this can also be a designated area within a building or building cluster.
 
 ### Implementation notes
-• In Clocks/Scientia, this is equivalent to _building_
+* In Clocks/Scientia, this is equivalent to _building_
 * In CELCAT, this is equivalent to _site_
 
 ### DEV NOTES
