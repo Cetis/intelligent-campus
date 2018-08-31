@@ -18,6 +18,15 @@ API endpoint name: **event**
 
 An event links a Module Instance to a Room.
 
+### Implementation Notes
+
+* In Scientia/Clocks this is equivalent to _booking_
+* In CELCAT this is equivlant to _event_
+
+### DEV NOTES
+* Consider adding a date property for single-date events, as in the Clocks/PIE API.
+* Consider adding an optional requested_capacity property, as in the Clocls/PIE API.
+
 ## Notes
 An event is an abstraction of a timetabling entry for a module instance. This specification is derived from the APIs of the
 CELCAT and Syllabus Plus solutions typically used for timetabling by UK providers.
