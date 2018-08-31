@@ -1,4 +1,4 @@
-# event
+# Booking
 * [BOOKING_ID](#booking_id) [1] **
 * [NAME](#name) [0..1]
 * [ROOM_ID](#room_id) [1]
