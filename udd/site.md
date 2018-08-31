@@ -17,6 +17,7 @@ this can also be a designated area within a building or building cluster.
 * In CELCAT, this is equivalent to _site_
 
 ### DEV NOTES
+* Consider adding a PARENT_SITE_ID reference for nesting sites, e.g. campus > building > floor
 * Consider adding optional type attribute e.g. building, zone, floor, other...
 * Consider adding optional lat/long attributes
 * Consider adding optional bounding box attributes
