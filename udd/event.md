@@ -3,8 +3,10 @@
 * [NAME](#name) [0..1]
 * [ROOM_ID](#room_id) [1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [1]
+* [REQUESTED_CAPACITY](#requested_capacity) [0..1]
 * [START_TIME](#start_time) [1]
 * [END_TIME](#end_time) [1]
+* [SPECIFIC_DATE](#specific_date) [0..1]
 * [DAY_OF_WEEK](#day_of_week) [0..1]
 * [WEEKS](#weeks) [0..1]
 * [EVENT_PERIOD](#event_period) [1]
@@ -22,10 +24,6 @@ An event links a Module Instance to a Room.
 
 * In Scientia/Clocks this is equivalent to _booking_
 * In CELCAT this is equivlant to _event_
-
-### DEV NOTES
-* Consider adding a date property for single-date events, as in the Clocks/PIE API.
-* Consider adding an optional requested_capacity property, as in the Clocls/PIE API.
 
 ## Notes
 An event is an abstraction of a timetabling entry for a module instance. This specification is derived from the APIs of the
@@ -100,6 +98,19 @@ String (255)
 
 ### Notes
 
+## REQUESTED_CAPACITY
+### Description
+The capacity used for booking the event. Usually this is the number of people expected in this event
+
+### Purpose
+Analytics
+
+### Derivation
+CLOCKS/Scientia
+
+### Format
+Integer
+
 ## START_TIME
 ### Description
 Time when the event starts, in HH:MM format.
@@ -127,6 +138,16 @@ String (255)
 ### Notes
 It is expected that sites / organisations will have their own code lists for EVENT_PERIOD values.
 
+## SPECIFIC_DATE
+### Description
+A single specified date to which the event applies> Use this property if the event is a single non-recurring event, or the event source represents all events as  single events. 
+
+### Format
+W3C DateTime
+
+### Derivation
+CLOCKS/Scientia
+
 ## DAY_OF_WEEK
 ### Description
 The day of the week to which the event applies, if it is a recurring event. Where an event occurs on multiple days per week, use 
@@ -142,7 +163,7 @@ Week days in lowercase; one of "monday","tuesday","wednesday","thursday","friday
 String (9)
 
 ### Notes
-Where no day of week is given, the event is assumed to take place on all days within the period specified.
+Where no day of week is given, and there is no SPECIFIC_DATE specified, the event is assumed to take place on all days within the period specified.
 
 ## WEEKS
 ### Description
@@ -158,7 +179,7 @@ A string of letters 'Y' and 'N' signifying whether the event applies in the week
 String (255)
 
 ### Notes
-Where no weeks are given, the event is assumed to take place on all weeks within the period specified.
+Where no values for WEEKS and SPECIFIC_DATE are provided, the event is assumed to take place on all weeks within the period specified.
 
 
 
