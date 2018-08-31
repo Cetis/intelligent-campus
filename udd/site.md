@@ -21,6 +21,7 @@ this can also be a designated area within a building or building cluster.
 * Consider adding optional type attribute e.g. building, zone, floor, other...
 * Consider adding optional lat/long attributes
 * Consider adding optional bounding box attributes
+* Consider adding tenant_id reference for provider
 
 ## SITE_ID
 ### Description
