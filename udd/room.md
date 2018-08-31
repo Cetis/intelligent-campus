@@ -26,7 +26,7 @@ String (255)
 
 ### Notes
 
-## name
+## NAME
 ### Description
 A human-readable label for the room.
 
