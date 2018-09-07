@@ -1,21 +1,46 @@
 # Intelligent Campus Mapping Ontology
 
-The Intelligent Campus Mapping ontology is a simple flat ontology of entities that map to Open Street Map keys or tags (a combination of keys and properties). The ontology is split into two types of entitiess, items (that can be mapped to OSM TAGS) and properties (that can be mapped to OSM keys)
+The Intelligent Campus Mapping ontology is a simple ontology that can be used with GeoJSON, the ontology maps directly to[OpenStreetMap Keys](https://wiki.openstreetmap.org/wiki/Keys) or [OpenStreetMap tags](https://wiki.openstreetmap.org/wiki/Tags) for practicle easy mappint
 
-## Rationale
-The HE service point ontology is based upon [OpenStreetMap tags](https://wiki.openstreetmap.org/wiki/Tags) and where possible a link to an Open Street Map key (typically for properties in the vocab) OR key:value pair (typically for items in the vocab) will be supplied. Where there is no suitable Open Street Map key or keypair pair, a wikidata entry will be provided.
-
-
-### Notes on Open Street Maps
-
-- Open street maps has 3 types of entities, these are
-    - nodes (defining points in space),
-    - ways (defining linear features and area boundaries), and
-    - relations (which are sometimes used to explain how other elements work together).
+[List of items](./items.md)
+[List of properties](./properties.md)
 
 
-[List of items]
-[List of properties]
+### Buildings Example
 
+A simple should use the [University entity](https://wiki.openstreetmap.org/wiki/Tags) with a recommended minimum of the building, operator, name. A building that spans an area should be supplied with an array of coordinates, which can be converted to an OSM way.
 
-How do we go from converting
+#### GeoJSON JSON Example
+`
+
+``` Javascript
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-0.140043, 51.5173639]
+  },
+  "properties": {
+        "Operator": "University of Jisc",
+        "Name": "The Frank Herbert Building",
+        "Building": "yes"
+      }
+}
+```
+
+#### Open Street Map XML Example
+
+```
+ <node id="1345484518" lat="51.5173639" lon="-0.140043">
+  <tag k="amenity" v="university"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="The Frank Herbert Building"/>
+  <tag k="operator" v="University of Cambridge"/>
+ </node>
+```
+
+#### Examples on Open Street Map
+
+A single long lat example: [Combination room at the University of Cambridge](https://www.openstreetmap.org/node/1345484518)
+
+An area: [Anglia Ruskin University]: https://www.openstreetmap.org/way/135077623

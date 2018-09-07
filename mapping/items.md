@@ -1,6 +1,17 @@
 
 ## Items
 
+### Building
+<table>
+<tr><th align="left">label</th><td>Building</td></tr>
+<tr><th align="left">Description</th><td>Organised collection of resources</td></tr>
+<tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:building"> building</a></td></tr>
+<tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q41176">Q41176</a> </td></tr>
+<tr><th align="left">Properties</th><td><ul><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontology#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+</table>
+
+
+
 ### ATM
 <table>
 <tr><th align="left">label</th><td>ATM</td></tr>
