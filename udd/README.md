@@ -39,6 +39,15 @@ context: {
 }
 ~~~~
 
+An example with very limited context, for example a report from a building management system for a whole building.
+
+~~~~
+context: {
+  site_id: Middleton_1,
+  timestamp: 2018-01-08:12:00:00Z
+}
+~~~~
+
 ## Relating event contexts to UDD entities
 
 There are two main ways you can connect events to the UDD:
