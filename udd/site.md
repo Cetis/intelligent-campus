@@ -1,6 +1,8 @@
 # site
 * [SITE_ID](#site_id) [1] **
 * [NAME](#name) [0..1]
+* [TYPE](#type) [0..1]
+* [PARENT_SITE_ID]
 * [PROVIDED_AT](https://github.com/jiscdev/analytics-udd/blob/master/udd/assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -47,3 +49,16 @@ Display
 
 ### Valid Values
 Any
+
+## TYPE
+### Description
+A human-readable label for the type of site.
+
+### Purpose
+Display
+
+### Valid Values
+Any. Examples include "Campus", "Building", "Floor"
+
+### Format
+String (255)
