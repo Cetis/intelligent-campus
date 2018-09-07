@@ -13,38 +13,57 @@ For example, the snippet below is an event where both the room where the measure
 the room was being used have been included in the sensor event context:
 
 ~~~~
-context: {
-  room_id: 58-1204,
-  mod_instance_id: CPU4000-2018-4,
-  timestamp: 2018-01-08:12:00:00Z
+{
+	"context": {
+    "room_id": "58-1204",
+    "mod_instance_id": "CPU4000-2018-4",
+    "timestamp": "2018-01-08:12:00:00Z"
+   }
 }
 ~~~~
 
 Another example, this time for a sensor not related to a teaching activity and recorded at a generic location rather than a room:
 
 ~~~~
-context: {
-  location_id: 61204,
-  timestamp: 2018-01-08:12:00:00Z
+{
+	"context": {
+    "location_id": "61204",
+    "timestamp": "2018-01-08:12:00:00Z"
+   }
 }
 ~~~~
 
 An example where the student and location have been identified, e.g. by a student RFID card used to access an information kiosk.
 
 ~~~~
-context: {
-  location_id: 61204,
-  student_id: 91374125,
-  timestamp: 2018-01-08:12:00:00Z
+{
+	"context": {
+    "location_id": "61204",
+    "student_id": "91374125",
+    "timestamp": "2018-01-08:12:00:00Z"
+  }
 }
 ~~~~
 
 An example with very limited context, for example a report from a building management system for a whole building.
 
 ~~~~
-context: {
-  site_id: Middleton_1,
-  timestamp: 2018-01-08:12:00:00Z
+{
+	"context": {
+    "site_id": "Middleton_1",
+    "timestamp": "2018-01-08:12:00:00Z"
+  }
+}
+~~~~
+
+In some cases, sensors may not correlate with any UDD entities:
+
+~~~~
+{
+	"context": {
+		"coordinates": [51.510531, -0.118930],
+		"timestamp": "2018-01-08:12:00:00Z"
+	}
 }
 ~~~~
 
