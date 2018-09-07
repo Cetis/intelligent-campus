@@ -12,6 +12,8 @@
 <tr><th align="left">terms, can be used with </th><td><ul><li><a href="./items.md#capacity">Capacity</a></li><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
+#### GeoJSON JSON Example
+
 ``` Javascript
 {
   "type": "Feature",
