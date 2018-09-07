@@ -12,6 +12,33 @@
 <tr><th align="left">terms, can be used with </th><td><ul><li><a href="./items.md#capacity">Capacity</a></li><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
+``` Javascript
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-0.140043, 51.5173639]
+  },
+  "properties": {
+        "amenity": "university",
+        "operator": "University of Jisc",
+        "name": "The Frank Herbert Building",
+        "building": "yes"
+      }
+}
+```
+
+#### Open Street Map XML Example
+
+```
+ <node id="1345484518" lat="51.5173639" lon="-0.140043">
+  <tag k="amenity" v="university"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="The Frank Herbert Building"/>
+  <tag k="operator" v="University of Cambridge"/>
+ </node>
+```
+
 ### Building
 <table>
 <tr><th align="left">label</th><td>Building</td></tr>
