@@ -12,3 +12,5 @@ Features are fixed properties of a location - or at least, slowly changing - tha
 
 * DEAF_LOOP
 * WHEELCHAIR_ACCESS
+* SMARTBOARD
+* PROJECTOR
