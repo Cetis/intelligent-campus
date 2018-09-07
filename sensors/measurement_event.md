@@ -26,6 +26,7 @@ This specification is for the collection of data for the use in Intelligent Camp
 - Consider splitting Context into components such as Location, Timestamp, and so on.
 - Consider whether UDD or XAPI style is preferable (XAPI style adopted here).
 - This is based on Safehouse. Others need to be compared.
+- Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service.
 
 
 # Measurement_Event
