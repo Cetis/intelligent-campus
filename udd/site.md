@@ -2,7 +2,7 @@
 * [SITE_ID](#site_id) [1] **
 * [NAME](#name) [0..1]
 * [TYPE](#type) [0..1]
-* [PARENT_SITE_ID]
+* [PARENT_SITE_ID](#parent_site_id) [0..1]
 * [PROVIDED_AT](https://github.com/jiscdev/analytics-udd/blob/master/udd/assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -19,8 +19,6 @@ this can also be a designated area within a building or building cluster.
 * In CELCAT, this is equivalent to _site_
 
 ### DEV NOTES
-* Consider adding a PARENT_SITE_ID reference for nesting sites, e.g. campus > building > floor. CELCAT only has site (which can be anything) as a parent for a room; CLOCKS has the concept of campus, building, floor, and zone in a hierarchy.
-* Consider adding optional type attribute e.g. building, zone, floor, other...
 * Consider adding optional lat/long attributes
 * Consider adding optional bounding box attributes
 * Consider adding tenant_id reference for provider
@@ -59,6 +57,20 @@ Display
 
 ### Valid Values
 Any. Examples include "Campus", "Building", "Floor"
+
+### Format
+String (255)
+
+
+## PARENT_SITE_ID
+### Description
+The site the current site is a part of, for systems that provides a hierarchy of sites (campus, building, floor)
+
+### Purpose
+Relational
+
+### Valid Values
+Any.
 
 ### Format
 String (255)
