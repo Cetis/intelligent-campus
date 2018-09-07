@@ -2,8 +2,8 @@
 
 The Intelligent Campus Mapping ontology is a simple mapping ontology intended for used with GeoJSON, the ontology maps directly to [OpenStreetMap Keys](https://wiki.openstreetmap.org/wiki/Keys) or [OpenStreetMap tags](https://wiki.openstreetmap.org/wiki/Tags) for practical and easy mapping of a campus.
 
-[List of items](./items.md)
-[List of properties](./properties.md)
+- [List of items](./items.md)
+-[List of properties](./properties.md)
 
 
 ### Buildings Example
@@ -11,7 +11,6 @@ The Intelligent Campus Mapping ontology is a simple mapping ontology intended fo
 A simple should use the [University entity](https://wiki.openstreetmap.org/wiki/Tags) with a recommended minimum of the building, operator, name. A building that spans an area should be supplied with an array of coordinates, which can be converted to an OSM way.
 
 #### GeoJSON JSON Example
-`
 
 ``` Javascript
 {
@@ -21,7 +20,7 @@ A simple should use the [University entity](https://wiki.openstreetmap.org/wiki/
     "coordinates": [-0.140043, 51.5173639]
   },
   "properties": {
-        "amenity": "Uuiversity",
+        "amenity": "uiversity",
         "Operator": "University of Jisc",
         "Name": "The Frank Herbert Building",
         "Building": "yes"
@@ -44,4 +43,4 @@ A simple should use the [University entity](https://wiki.openstreetmap.org/wiki/
 
 A single long lat example: [Combination room at the University of Cambridge](https://www.openstreetmap.org/node/1345484518)
 
-An area: [Anglia Ruskin University]: https://www.openstreetmap.org/way/135077623
+An area: [Anglia Ruskin University]https://www.openstreetmap.org/way/135077623
