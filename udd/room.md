@@ -1,6 +1,7 @@
 # room
 * [ROOM_ID](#room_id) [1] **
 * [NAME](#name) [0..1]
+* [OSM_WAY_ID](#osm_way_id) [0..1]
 * [SITE_ID](#site_id) [1]
 * [PROVIDED_AT](https://github.com/jiscdev/analytics-udd/blob/master/udd/assessment_instance.md#provided_at) [0..1]
 
@@ -50,6 +51,22 @@ Any
 String (255)
 
 ### Notes
+
+## OSM_WAY_ID
+### Description
+The identifier for the room on Open Street Map as a Way (shape).
+
+### Purpose
+Linking to mapping and wayfinding
+
+### Valid Values
+A valid OSM identifier, typically a 9-digit number.
+
+### Format
+64-bit Integer
+
+### Notes
+For example, room 58-1049 in the Murray Building at the University of Southampton has the Way ID of 243169186. See: https://www.openstreetmap.org/way/243169186
 
 ## SITE_ID
 ### Description
