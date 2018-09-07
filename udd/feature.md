@@ -1,4 +1,4 @@
-# Features
+# Feature
 
 For analytic purposes it may be useful to capture some additional features of rooms and sites to use as dimensions. 
 
