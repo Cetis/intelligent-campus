@@ -1,3 +1,5 @@
+_NOTE THIS IS A WORKING DRAFT_
+
 # Intelligent Campus UDD Extension
 
 This the data model for the Intelligent Campus UDD Extension. This is a set of classes that extends the UDD for Learning Analytics 
