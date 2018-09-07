@@ -8,7 +8,7 @@ The Intelligent Campus Mapping ontology is a simple ontology intended for used w
 
 ### Buildings Example
 
-A University building should use the [University term](https://wiki.openstreetmap.org/wiki/Tags) with a recommended minimum of the building, operator, name. A building that spans an area should be supplied with an array of coordinates, which can be converted to an OSM way.
+A University should use the [University term](items.md#university) with a recommended minimum of the building, operator, name. A building that spans an area should be supplied with an array of coordinates, which can be converted to an OSM way.
 
 #### GeoJSON JSON Example
 
