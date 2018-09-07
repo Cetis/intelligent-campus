@@ -14,11 +14,11 @@ the room was being used have been included in the sensor event context:
 
 ~~~~
 {
-	"context": {
+  "context": {
     "room_id": "58-1204",
     "mod_instance_id": "CPU4000-2018-4",
     "timestamp": "2018-01-08:12:00:00Z"
-   }
+  }
 }
 ~~~~
 
@@ -26,10 +26,10 @@ Another example, this time for a sensor not related to a teaching activity and r
 
 ~~~~
 {
-	"context": {
+  "context": {
     "location_id": "61204",
     "timestamp": "2018-01-08:12:00:00Z"
-   }
+  }
 }
 ~~~~
 
@@ -37,7 +37,7 @@ An example where the student and location have been identified, e.g. by a studen
 
 ~~~~
 {
-	"context": {
+  "context": {
     "location_id": "61204",
     "student_id": "91374125",
     "timestamp": "2018-01-08:12:00:00Z"
@@ -49,7 +49,7 @@ An example with very limited context, for example a report from a building manag
 
 ~~~~
 {
-	"context": {
+  "context": {
     "site_id": "Middleton_1",
     "timestamp": "2018-01-08:12:00:00Z"
   }
@@ -60,10 +60,10 @@ In some cases, sensors may not correlate with any UDD entities:
 
 ~~~~
 {
-	"context": {
-		"coordinates": [51.510531, -0.118930],
-		"timestamp": "2018-01-08:12:00:00Z"
-	}
+  "context": {
+    "coordinates": [51.510531, -0.118930],
+    "timestamp": "2018-01-08:12:00:00Z"
+  }
 }
 ~~~~
 
@@ -86,9 +86,9 @@ howver the event can then be related to a collection of students via correlating
 from the BOOKING entity locate the relevent MOD_INSTANCE.
 
 ~~~~
-context: {
-  room_id: 58-1204,
-  timestamp: 2018-01-08:12:00:00Z
+"context": {
+  "room_id": "58-1204",
+  "timestamp": "2018-01-08:12:00:00Z"
 }
 ~~~~
 
