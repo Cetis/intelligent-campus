@@ -40,6 +40,7 @@ A single instance of a particular type of Measurement taken by a Detector within
 		<td>JSON Object containing Measurement, Context and Detector</td>
 		<td></td>
 	</tr>
+</table>
 
 # Measurement Entity
 
