@@ -1,5 +1,16 @@
 
-## Items
+## Ontology
+
+### University
+<table>
+<tr><th align="left">label</th><td>University</td></tr>
+<tr><th align="left">Description</th><td>Academic institution for further education</td></tr>
+<tr><th align="left">Open Street Map Tag</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Duniversity">amenity=university</a></td></tr>
+<tr><th align="left">GeoJSON property key pair</th><td>"amenity" "university"</td></tr>
+<tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q3918">Q3918</a> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a></li><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
+</table>
+
 
 ### Building
 <table>
@@ -7,7 +18,7 @@
 <tr><th align="left">Description</th><td>Organised collection of resources</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:building"> building</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q41176">Q41176</a> </td></tr>
-<tr><th align="left">Properties</th><td><ul><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontology#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Properties</th><td><ul><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 
@@ -66,7 +77,7 @@
 <tr><th align="left">Description</th><td>Organised collection of resources</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:building"> building</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q41176">Q41176</a> </td></tr>
-<tr><th align="left">Properties</th><td><ul><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontology#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Properties</th><td><ul><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 ### Catering
@@ -75,7 +86,7 @@
 <tr><th align="left">Description</th><td>Food service</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant"> amenity=restaurant</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q777754">Q777754</a> </td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#capacity">Capacity</a></l1><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontology#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a></l1><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 ### Defibrillator (need a higherlevel entity for things like this)
@@ -86,7 +97,7 @@
 <tr><th align="left">Description</th><td>Organised collection of resources</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlibrary"> amenity=library</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q13226383">Q13226383</a> </td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontologymd#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 ### Parking
@@ -95,7 +106,7 @@
 <tr><th align="left">Description</th><td>Area that is intended for parking vehicles</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"> amenity=parking</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q6501349">Q6501349</a> </td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#capacity">Capacity</a><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontologymd#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 ### Place of Worship
@@ -104,18 +115,11 @@
 <tr><th align="left">Description</th><td>Specially designed structure or consecrated space for use in worshipping</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dplace_of_worship"> amenity=place_of_worship</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q1370598">Q1370598</a> </td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#capacity">Capacity</a><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontologymd#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 
-### University
-<table>
-<tr><th align="left">label</th><td>University</td></tr>
-<tr><th align="left">Description</th><td>Academic institution for further education</td></tr>
-<tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Duniversity">amenity=university</a></td></tr>
-<tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q3918">Q3918</a> </td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#capacity">Capacity</a></li><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontologymd#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
-</table>
+
 
 
 ### Laboratory 
@@ -124,7 +128,7 @@
 <tr><th align="left">Description</th><td>Facility that provides controlled conditions or equipment</td></tr>
 <tr><th align="left">Open Street Map</th><td>?</td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q3918">Q3918</a> </td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#capacity">Capacity</a></li><li><a href="./Mapping-ontology#entrance">Entrance</a></li><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontologymd#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li><li><a href="./Mapping-ontology#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a></li><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 ### Waste_container
@@ -134,5 +138,5 @@
 <tr><th align="left">Description</th><td>Container that holds waste</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_disposal">amenity=disposal</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q216530">Q216530</a></td></tr>
-<tr><th align="left">Releated Properties</th><td><ul><li><a href="./Mapping-ontology#operator">Operator</a></li><li><a href="./Mapping-ontologymd#name">Name</a></li><li><a href="./Mapping-ontologymd#reference">Reference</a></li></ul> </td></tr>
+<tr><th align="left">Releated Properties</th><td><ul><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li></ul> </td></tr>
 </table>

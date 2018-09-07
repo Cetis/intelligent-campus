@@ -1,6 +1,6 @@
 # Intelligent Campus Mapping Ontology
 
-The Intelligent Campus Mapping ontology is a simple  ontology intended for used within the properties entity of a GeoJSON object, the ontology maps directly to [OpenStreetMap Keys](https://wiki.openstreetmap.org/wiki/Keys) or [OpenStreetMap tags](https://wiki.openstreetmap.org/wiki/Tags) for practical and easy mapping of a campus.
+The Intelligent Campus Mapping ontology is a simple ontology intended for used within the properties entity of a GeoJSON object, the ontology maps directly to [OpenStreetMap Keys](https://wiki.openstreetmap.org/wiki/Keys) or [OpenStreetMap tags](https://wiki.openstreetmap.org/wiki/Tags) for practical and easy mapping of a campus.
 
 - [List of items](./items.md)
 - [List of properties](./properties.md)
