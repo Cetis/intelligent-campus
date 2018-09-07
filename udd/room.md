@@ -11,7 +11,11 @@ API endpoint name: **room**
 
 
 ## Description of room entity
-An identified space at a provider where scheduled events for module instances can occur. May or may not be a specific "room", for example may be a flexible learning space. 
+An identified space at a provider, particularly if it can be used for scheduled learning events. 
+
+For an item or a location that is not a room as such, such as a helpdesk or an entrance, use the Location entity instead.
+
+May or may not be a specific "room", for example may be a flexible learning space. 
 
 ### Implementation Notes
 * In Clocks/Scientia, this is equivalent to a _zone_
