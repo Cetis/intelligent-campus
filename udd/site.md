@@ -3,6 +3,7 @@
 * [NAME](#name) [0..1]
 * [TYPE](#type) [0..1]
 * [PARENT_SITE_ID](#parent_site_id) [0..1]
+* [OSM_WAY_ID](#osm_way_id) [0..1]
 * [PROVIDED_AT](https://github.com/jiscdev/analytics-udd/blob/master/udd/assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -61,6 +62,21 @@ Any. Examples include "Campus", "Building", "Floor"
 ### Format
 String (255)
 
+## OSM_WAY_ID
+### Description
+The identifier for the site on Open Street Map as a Way (shape).
+
+### Purpose
+Linking to mapping and wayfinding
+
+### Valid Values
+A valid OSM identifier, typically a 9-digit number.
+
+### Format
+64-bit Integer
+
+### Notes
+For example, the Humanities building on Bridgeford Street for the University of Manchester has the Way ID of 32605011. See: https://www.openstreetmap.org/way/32605011
 
 ## PARENT_SITE_ID
 ### Description
