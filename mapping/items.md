@@ -17,8 +17,8 @@
 
 ```
   atm[0]
-    lon = Jane Doe
-    lat = 888-555-1212
+    lon = -0.140043
+    lat = 51.5173639
     Operator = University of Jisc
     Reference = ATM1
 ```
@@ -30,8 +30,8 @@
 {
   "atm": [
     {
-      "lon": "Jane Doe",
-      "lat": "888-555-1212",
+      "lon": "-0.140043",
+      "lat": "51.5173639",
       "Operator": "University of Jisc",
       "Reference": "ATM1"
     }
