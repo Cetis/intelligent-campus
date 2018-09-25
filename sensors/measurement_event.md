@@ -117,13 +117,13 @@ An estimate of the value of a natural phenomenon involving a sensor.
 		<td>This could use a locally controlled list, not one controlled centrally, in much the same way as for subType extensions in Jisc xAPI.</td>
 	</tr>
 	<tr>
-		<td>measurement.scale_name</td>
+		<td>measurement.scale_name [0..1]</td>
 		<td>Label for the commonly-used name of the scale of values (for example, Celsius)</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>measurement.value</td>
+		<td>measurement.value [1]</td>
 		<td>The observed value or returned value (for example an average of observed values) describing the phenomenon</td>
 		<td>Numeric value</td>
 		<td></td>
