@@ -9,7 +9,7 @@ For this specification, we have based our definitions of terms on the OGC Sensor
 - *Measure* (noun): A value described using a numerical scale. Measure is a synonym for physical quantity.
 - *Measurement* (verb): An instance of estimating the value of a natural phenomenon involving a detector or sensor. A measurement also has a location, time, and reference to the method used to determine the value - See Context.  
 - *Observation*: Act of observing phenomenon, where the goal is to measure, estimate or otherwise determine the value of a property.
-- *Sensor*: An entity capable of observing a phenomenon and returning an observed value.
+- *Sensor*: An entity capable of observing phenomena and returning observed values. A sensor may contain several detectors.
 - *Value*: An observed value describing a phenomenon, which may use one of a variety of scales.
 
 Note: we use the term Context as a synonym for SensorML's term Measurement Feature.
@@ -26,12 +26,13 @@ This specification is for the collection of data for the use in Intelligent Camp
 - Consider splitting Context into components such as Location, Timestamp, and so on.
 - Consider whether UDD or XAPI style is preferable (XAPI style adopted here).
 - This is based on Safehouse. Others need to be compared.
-- Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service.
+- Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service. This spec now revised to cover the possibility of time ranges or averages over time.
+- Potential issue over averages: do we need to know the time period (eg average temp over an hour), or should we leave that detail to the provider? I favour the latter.
 
 
 # Measurement_Event
 ## Description
-A single instance of a particular type of Measurement taken by a Detector within a given Context (at a specific point in space and at a specific moment in time through a defined method). A Measurement_Event consists of the Measurement itself, its Detector and its Context.
+A single instance of a particular type of Measurement taken by a Detector within a given Context (at a specific point in space and at a specific moment in time through a defined method). A Measurement_Event consists of the Measurement itself, its Detector and its Context. A Measurement_Event may cover a range of real world data instances, for example a mid-point of a highest and lowest value over a time period, or an average of a series of data points. This may be important to reduce the volume of data transferred.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th><th>Notes</th></tr>
@@ -46,7 +47,7 @@ A single instance of a particular type of Measurement taken by a Detector within
 # Measurement Entity
 
 ## Description
-An instance of estimating the value of a natural phenomenon involving a detector or sensor.
+An estimate of the value of a natural phenomenon involving a detector or sensor.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th><th>Notes</th></tr>
@@ -58,7 +59,7 @@ An instance of estimating the value of a natural phenomenon involving a detector
 	</tr>
 	<tr>
 		<td>measurement.value</td>
-		<td>The observed value describing the phenomenon</td>
+		<td>The observed value or returned value (for example an average of observed values) describing the phenomenon</td>
 		<td>Numeric value</td>
 		<td></td>
 	</tr>
@@ -72,7 +73,7 @@ An instance of estimating the value of a natural phenomenon involving a detector
 		<td>measurement.range</td>
 		<td></td>
 		<td></td>
-		<td>Consider using something like our result.score in XAPI</td>
+		<td>Consider using something like our result.score in XAPI.</td>
 	</tr>
 </table>
 
@@ -94,7 +95,7 @@ Describes the location, measurement type and method used by the Detector. Necess
 		<td>context.timestamp [1]</td>
 		<td>Date and time the Measurement was taken.</td>
 		<td>YYYY-MM-DDThh:mm:ss.sssZ</td>
-		<td>Might some sensors record timestamp of measurement and timestamp of transmission? Would we need both?</td>
+		<td>Might some sensors record timestamp of measurement and timestamp of transmission? Would we need both? In addition, if a range of values is used, we should take whatever relevant timestamp is available.</td>
 	</tr>
 	<tr>
 		<td>context.location [1]</td>
@@ -124,7 +125,7 @@ Describes the location, measurement type and method used by the Detector. Necess
 		<td>context.method [0..1]</td>
 		<td>Describes the way in which the Detector detects the measure, for example, Wifi positioning by signal strength, Bluetooth, Thermometer, and so on.</td>
 		<td>JSON Object</td>
-		<td></td>
+		<td>Locally controlled ontology?</td>
 	</tr>
 	<tr>
 		<td>context.method.type [0..1]</td>
@@ -169,7 +170,7 @@ Identifies and describes the particular equipment used for the environmental sen
 		<td>sensor.ip-address [0..1]</td>
 		<td>Sensor's IP address</td>
 		<td>ip address</td>
- 		<td>Could be IPv4 or IPv6.</td>
+ 		<td>Could be IPv4 or IPv6. May need a label to provide this detail.</td>
 	</tr>
 	<tr>
 		<td>sensor.name [0..1]</td>
