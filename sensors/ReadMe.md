@@ -12,10 +12,10 @@ The sensor data contains not only the data relating to the measured values and t
 
 We have based our definitions of terms on the [OGC SensorML encoding standard, OGC 12-000](https://portal.opengeospatial.org/files/?artifact_id=55939). Relevant definitions, slightly simplified from the original, are:
 
-- *Context*: A Measurement has a location, time, and reference to the method used to determine the value. This is Context. A Context effectively binds a value to a location and to a method, detector or sensor.
+- *Context*: A Measurement has a location, time, frequency and way of transmitting the data to a collecting system. This is Context. A Context effectively binds a measurement value to a location, to a sensor and to data transmission.
 - *Detector*: A single part of a Measurement System defining sampling and response characteristics of a detection device. A Detector has only 1 input and 1 output, both being scalar quantities. A Detector senses 1 type of measurement. A Sensor may contain several Detectors. Data is transmitted at Sensor level, a Detector is not separately identified.
 - *Measure* (noun): A value described using a numerical scale. Measure is a synonym for physical quantity.
-- *Measurement* (verb): An instance of estimating the value of a natural phenomenon involving a Detector or Sensor. A Measurement also has a Location, Timestamp, and reference to the method used to determine the value - See Context.  
+- *Measurement* (verb): An instance of estimating the value of a natural phenomenon involving a Detector or Sensor. A Measurement also has a Location, Timestamp, and reference to the Method used to determine the value.  
 - *Observation*: Act of observing phenomenon, where the goal is to measure, estimate or otherwise determine the value of a property.
 - *Sensor*: An entity capable of observing phenomena and returning observed values. A Sensor may contain several Detectors.
 - *Value*: An observed value describing a phenomenon, which may use one of a variety of scales.
