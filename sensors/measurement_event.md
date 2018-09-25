@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This draft specification describes the structure, entities and properties to record a Measurement taken by a Detector in a specific Context. It is expected that these data records will be collected by a system that will relate the data to other information, such as timetables and student activities.
+This draft specification describes the structure, entities and properties to record Measurements taken by a Sensor in a specific Context. It is expected that these data records will be collected by a system that will relate the data to other information, such as timetables and student activities.
 
 This specification is for the collection of data for the use in Intelligent Campus systems. It does not define specific data output by any actual type of sensor, but instead the target data format to be used, typically by mapping real world data to it.
 
