@@ -6,7 +6,7 @@ This is a data model for recording various types of environmental data from a wi
 
 ## How the Sensor data links with the UDD data and with the Learning Data Hub
 
-The sensor data contains not only the data relating to the measured values and the sensors, but also linking data that relates to the [Intelligent Campus UDD Extension](https://github.com/Cetis/intelligent-campus/blob/master/udd/README.md) for example Room_ID, Site_ID or Location_ID. Linking in this way means that the sensor data can be related to timetabled and other events within identified modules and courses, located via timetabling and booking systems.  
+The sensor data contains not only the data relating to the measured values and the sensors, but also linking data that relates to the geographical location of the sensor, for example Room_ID, Site_ID or Location_ID. Linking in this way means that the sensor data can be related to timetabled and other events within identified modules and courses, located via timetabling and booking systems. See [Intelligent Campus UDD Extension](https://github.com/Cetis/intelligent-campus/blob/master/udd/README.md) for a more detailed explanation and examples of how it might link in to the Learning Data Hub.
 
 ## Definitions
 
