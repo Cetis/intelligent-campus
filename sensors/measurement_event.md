@@ -42,41 +42,7 @@ A single instance of a particular type of Measurement taken by a Sensor within a
 	</tr>
 </table>
 
-# Measurement Entity
-
-## Description
-An estimate of the value of a natural phenomenon involving a sensor.
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th><th>Notes</th></tr>
-	<tr>
-		<td>measurement.id [1]</td>
-		<td>Uniquely identifies the measurement instance.</td>
-		<td>string</td>
-		<td>If we use a composite primary key, for example, this may optional?</td>
-	</tr>
-	<tr>
-		<td>measurement.method [0..1]</td>
-		<td>Describes the way in which the Detector detects the measure, for example, Wifi positioning by signal strength, Bluetooth, Thermometer, and so on. Probably use a commonly-used term from a controlled list. </td>
-		<td>Vocabulary term from ontology of measurement methods.</td>
-		<td>This could use a locally controlled list, not one controlled centrally, in much the same way as for subType extensions in Jisc xAPI.</td>
-	</tr>
-	<tr>
-		<td>measurement.scale_name</td>
-		<td>Label for the commonly-used name of the scale of values (for example, Celsius)</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>measurement.value</td>
-		<td>The observed value or returned value (for example an average of observed values) describing the phenomenon</td>
-		<td>Numeric value</td>
-		<td></td>
-	</tr>
-</table>
-
-
-# Context Entity
+## Context Entity
 ### Description
 Describes the Location, Timestamp, Frequency and Transmission Method used by the Sensor. Necessary because a single Sensor may provide multiple types of data within a single payload.
 
@@ -132,9 +98,40 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
 	</tr>
  </table>
 
+## Measurement Entity
+### Description
+An estimate of the value of a natural phenomenon involving a sensor.
 
-# Sensor Entity
-## Description
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th><th>Notes</th></tr>
+	<tr>
+		<td>measurement.id [1]</td>
+		<td>Uniquely identifies the measurement instance.</td>
+		<td>string</td>
+		<td>If we use a composite primary key, for example, this may optional?</td>
+	</tr>
+	<tr>
+		<td>measurement.method [0..1]</td>
+		<td>Describes the way in which the Detector detects the measure, for example, Wifi positioning by signal strength, Bluetooth, Thermometer, and so on. Probably use a commonly-used term from a controlled list. </td>
+		<td>Vocabulary term from ontology of measurement methods.</td>
+		<td>This could use a locally controlled list, not one controlled centrally, in much the same way as for subType extensions in Jisc xAPI.</td>
+	</tr>
+	<tr>
+		<td>measurement.scale_name</td>
+		<td>Label for the commonly-used name of the scale of values (for example, Celsius)</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>measurement.value</td>
+		<td>The observed value or returned value (for example an average of observed values) describing the phenomenon</td>
+		<td>Numeric value</td>
+		<td></td>
+	</tr>
+</table>
+
+## Sensor Entity
+### Description
 Identifies and describes the particular equipment used for the environmental sensing event. This entity is mandatory for the measurement_event statement.
 
 <table>
