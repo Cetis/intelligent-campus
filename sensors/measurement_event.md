@@ -101,17 +101,17 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
  		<td>Presume mandatory but business rules to determine content.</td>
 	</tr>
 	<tr>
-		<td>context.location.sensorLocation [0..1]</td>
-		<td>An optional geoJSON Object with geolocation details for the sensor (see Example)</td>
-		<td>geoJSON Object</td>
-		<td>Follows Jisc xapi context.extensions.devicelocation.</td>
-	</tr>
-	<tr>
 		<td>context.location.room_id [0..1]</td>
 		<td>The identifier of the room as supplied by the provider, typically an identifier supplied from the timetable or building management system.</td>
 		<td>string (255)</td>
  		<td>Uses room entity in IntCamp.UDD.</td>
 	</tr>	
+	<tr>
+		<td>context.location.sensorLocation [0..1]</td>
+		<td>An optional geoJSON Object with geolocation details for the sensor (see Example)</td>
+		<td>geoJSON Object</td>
+		<td>Follows Jisc xapi context.extensions.devicelocation.</td>
+	</tr>
 	<tr>
 		<td>context.location.site_id [0..1]</td>
 		<td>The identifier of the site as supplied by the provider, typically an identifier supplied from the timetable or building management system.</td>
