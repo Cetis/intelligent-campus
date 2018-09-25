@@ -179,15 +179,15 @@ Identifies and describes the particular equipment used for the environmental sen
         "location": {
             "room_id": "AS34",
             "sensorLocation": {
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [51.510531, -0.118930]
-					},
-				"properties": {
-				    "name": "University of Jisc"
-				}
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [51.510531, -0.118930]
 			},
+		"properties": {
+		    "name": "University of Jisc"
+		}
+	    },
             "site_id": "Main1234"
         },
         "timestamp": "2018-07-23T16:27:10.418789Z",
@@ -195,16 +195,16 @@ Identifies and describes the particular equipment used for the environmental sen
     },
     "measurement": {
         "id": 129,
-		"method": "thermometer",
-	    "scale_name": "Celsius",
+	"method": "thermometer",
+	"scale_name": "Celsius",
         "value": 27.5
-	},
-	"sensor": {
-		"id": "15",
-		"ip-address": "34.248.41.184",
-		"mac": "008000000000ba34",
-		"name": "safehouse:test",
-		"type": "safehouse"
-	}
+    },
+    "sensor": {
+	"id": "15",
+	"ip-address": "34.248.41.184",
+	"mac": "008000000000ba34",
+	"name": "safehouse:test",
+	"type": "safehouse"
+    }
 }
 }
