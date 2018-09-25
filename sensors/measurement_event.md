@@ -168,7 +168,7 @@ Identifies and describes the particular equipment used for the environmental sen
 	</tr>	
  </table>
 
-## JSON Example
+## JSON example with everything
 
 ``` javascript
 {
@@ -206,5 +206,26 @@ Identifies and describes the particular equipment used for the environmental sen
 	"name": "safehouse:test",
 	"type": "safehouse"
     }
+}
+}
+
+## JSON example with only mandatory elements
+
+{
+"measurement_event": {
+    "context": {
+        "id": "kccBCAICAQYR/zMBF2QOEAABARoB1gCfAQAJCUQ2QjI3ODiP",
+        "location": {
+            "room_id": "AS34"
+        },
+        "timestamp": "2018-07-23T16:27:10.418789Z"
+    },
+    "measurement": {
+        "id": 129,
+        "value": 27.5
+	},
+	"sensor": {
+		"id": "15"
+	}
 }
 }
