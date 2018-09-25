@@ -101,7 +101,7 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
  		<td>Presume mandatory but business rules to determine content.</td>
 	</tr>
 	<tr>
-		<td>context.location.geoJSON [0..1]</td>
+		<td>context.location.sensorLocation [0..1]</td>
 		<td>An optional geoJSON Object with geolocation details for the sensor (see Example)</td>
 		<td>geoJSON Object</td>
 		<td>Follows Jisc xapi context.extensions.devicelocation.</td>
