@@ -37,7 +37,7 @@ A single instance of a particular type of Measurement taken by a Sensor within a
 	<tr>
 		<td>measurement_event</td>
 		<td>As above</td>
-		<td>JSON Object containing Measurement, Context and Sensor</td>
+		<td>JSON Object containing Context, Measurement and Sensor</td>
 		<td></td>
 	</tr>
 </table>
@@ -171,21 +171,40 @@ Identifies and describes the particular equipment used for the environmental sen
 ## JSON Example
 
 ``` javascript
+{
+"measurement_event": {
+    "context": {
+        "event_frequency": "hourly",
+        "id": "kccBCAICAQYR/zMBF2QOEAABARoB1gCfAQAJCUQ2QjI3ODiP",
+        "location": {
+            "room_id": "AS34",
+            "sensorLocation": {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [51.510531, -0.118930]
+					},
+				"properties": {
+				    "name": "University of Jisc"
+				}
+			},
+            "site_id": "Main1234"
+        },
+        "timestamp": "2018-07-23T16:27:10.418789Z",
+        "transmission": "WiFi"
+    },
+    "measurement": {
+        "id": 129,
+		"method": "thermometer",
+	    "scale_name": "Celsius",
+        "value": 27.5
+	},
 	"sensor": {
 		"id": "15",
+		"ip-address": "34.248.41.184",
 		"mac": "008000000000ba34",
-		"ip-address: "34.248.41.184",
 		"name": "safehouse:test",
 		"type": "safehouse"
 	}
-```
-
-
-
-
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
+}
+}
