@@ -170,7 +170,7 @@ Identifies and describes the particular equipment used for the environmental sen
 
 ## JSON example with everything
 
-``` javascript
+``` JSON
 {
 "measurement_event": {
     "context": {
@@ -208,9 +208,11 @@ Identifies and describes the particular equipment used for the environmental sen
     }
 }
 }
+```
 
 ## JSON example with only mandatory elements
 
+``` JSON
 {
 "measurement_event": {
     "context": {
