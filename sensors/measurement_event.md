@@ -91,7 +91,7 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
 		<td>Might some sensors record timestamp of measurement and timestamp of transmission? Would we need both? In addition, if a range of values is used, we should take whatever relevant timestamp is available.</td>
 	</tr>
 	<tr>
-		<td>context.transmission</td>
+		<td>context.transmission [0..1]</td>
 		<td>Describes how the recorded data is sent to the collecting system at the provider.</td>
 		<td>string</td>
 		<td>For example, WiFi, Bluetooth, email. Not sure if this is useful?</td>
