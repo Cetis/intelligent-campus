@@ -28,6 +28,7 @@ This specification is for the collection of data for the use in Intelligent Camp
 - This is based on Safehouse. Others need to be compared.
 - Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service. This spec now revised to cover the possibility of time ranges or averages over time.
 - Potential issue over averages: do we need to know the time period (eg average temp over an hour), or should we leave that detail to the provider? I favour the latter.
+- Consider a measurement.range property, to show possible or likely ranges of values?
 
 
 # Measurement_Event
@@ -68,12 +69,6 @@ An estimate of the value of a natural phenomenon involving a detector or sensor.
 		<td>Label for the commonly-used name of the scale of values (for example, Celsius)</td>
 		<td>string</td>
 		<td></td>
-	</tr>
-	<tr>
-		<td>measurement.range</td>
-		<td></td>
-		<td></td>
-		<td>Consider using something like our result.score in XAPI.</td>
 	</tr>
 </table>
 
