@@ -2,7 +2,7 @@ NOTE THIS IS A WORKING DRAFT
 
 # Sensors
 
-This is a data model for recording various types of environmental data from a wide variety of sensors. The current draft is based on Safehouse data from Jisc, so it is highly likely that changes will have to be made to incorporate other sensor data. The model follows the form of the more volatile "activity data" in the xAPI part of the Learning Data Hub, rather than the more static UDD data.
+This is a data model for recording various types of environmental data from a wide variety of sensors. The current draft is based on Safehouse data from Jisc, so it is highly likely that changes will have to be made to incorporate other sensor data. The [model](measurement_event.md) follows the form of the more volatile "activity data" in the xAPI part of the Learning Data Hub, rather than the more static UDD data.
 
 ## How the Sensor data links with the UDD data and with the Learning Data Hub
 
