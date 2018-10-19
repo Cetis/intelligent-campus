@@ -13,6 +13,7 @@ This specification is for the collection of data for the use in Intelligent Camp
 - Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service. This spec now revised to cover the possibility of time ranges or averages over time.
 - Potential issue over averages: do we need to know the time period (eg average temp over an hour), or should we leave that detail to the provider? I favour the latter.
 - Consider a measurement.range property, to show possible or likely ranges of values?
+- Suggestion: add measurement.type property for type of reading, for example "temperature", "humidity", and so on. Currently, this can be inferred from method, but it is almost certainly better to include this explicitly.
 
 # Measurement_Event
 ## Description
