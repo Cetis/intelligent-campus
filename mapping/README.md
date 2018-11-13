@@ -15,7 +15,9 @@ Each object is described as a series of required key-pairs that are described in
 - [Hosted OSM & GeoJSON converts between OSM XML and GeoJSON](http://bretagne-vivante-dev.org/js/osm-and-geojson/)
 
 ### University Building Example
-A University should use the [University item](items.md#university) with the keys building, operator, name. In GeoJSON, a building that spans an area should be supplied with an array of coordinates, which can be converted to an [OSM way](https://wiki.openstreetmap.org/wiki/Way).
+A University should use the [amenity:University](items.md#university) key pair, with keys building, operator, name.
+
+In GeoJSON, a building that spans an area should be supplied with an array of coordinates, which can be converted to an [OSM way](https://wiki.openstreetmap.org/wiki/Way).
 
 ### University
 <table>
