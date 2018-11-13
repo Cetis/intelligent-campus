@@ -1,6 +1,6 @@
 
 ## Ontology entities
-The intelligent campus ontology is an approach and not an exhaustive list. Entities map to popular OSM key pairs. This list documents popular entities and properties that may be implemented against them. To avoid mirroring the OSM documentation a list of popular entities with of OSM and geoJSON examples are kept here. Implementators may want to check there OSM documentation for other [key pairs](https://wiki.openstreetmap.org/wiki/Tags).
+The intelligent campus ontology is an approach and not an exhaustive list. Entities map to popular OSM key pairs. This list documents popular entities and properties that may be implemented against them. To avoid mirroring the OSM documentation a list of popular entities with of OSM and geoJSON examples are kept here. Implementers may want to check there OSM documentation for other [key pairs](https://wiki.openstreetmap.org/wiki/Tags).
 
 ### University Building
 
@@ -150,7 +150,7 @@ Medium sized waste bins should use the [amenity:waste_disposal](https://wiki.ope
 <tr><th align="left">label</th><td>Waste Container</td></tr>
 <tr><th align="left">Description</th><td>Container that holds waste</td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q216530">Q216530</a></td></tr>
-<tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_disposal">amenity=</a></td></tr>
+<tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_disposal">amenity=waste_disposal</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"waste_disposal"</td></tr
 <tr><th align="left">Example Properties</th><td><ul><li><a href="./items.md#operator">Operator</a></li></ul> </td></tr>
 </table>
@@ -194,7 +194,7 @@ Smaller sized waste bins should use the [amenity:waste_basket](https://wiki.open
 <tr><th align="left">label</th><td>Waste Container</td></tr>
 <tr><th align="left">Description</th><td>Container that holds waste</td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q216530">Q216530</a></td></tr>
-<tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">amenity=</a></td></tr>
+<tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">amenity=waste_basket</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"waste_disposal"</td></tr
 <tr><th align="left">Example Properties</th><td><ul><li><a href="./items.md#waste">waste</a></li></ul> </td></tr>
 </table>
