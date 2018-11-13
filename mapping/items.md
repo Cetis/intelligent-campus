@@ -1,12 +1,13 @@
 
 ## Ontology
 
-### University Building Example
+### University Building
+
 A University should use the [amenity:University](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Duniversity) key pair, with keys building, operator, name.
 
 In GeoJSON, a building that spans an area should be supplied with an array of coordinates, which can be converted to an [OSM way](https://wiki.openstreetmap.org/wiki/Way).
 
-### University
+
 <table>
 <tr><th align="left">label</th><td>University</td></tr>
 <tr><th align="left">Description</th><td>Academic institution for further education</td></tr>
@@ -16,6 +17,37 @@ In GeoJSON, a building that spans an area should be supplied with an array of co
 <tr><th align="left">Recommended key pairs</th><td><ul><li><a href="./items.md#entrance">Building</a></li><li><a href="./items.md#operator">Name</a></li><li><a href="./items.md#name">Operator</a></li></ul> </td></tr>
 <tr><th align="left">Example of related key pairs</th><td><ul><li><a href="./items.md#capacity">Capacity</a></li><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
+
+#### GeoJSON JSON Example
+
+``` Javascript
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-0.140043, 51.5173639]
+  },
+  "properties": {
+        "amenity": "University",
+        "operator": "University of Jisc",
+        "name": "The Frank Herbert Building",
+        "building": "yes"
+      }
+}
+```
+
+#### Open Street Map XML Example
+
+```
+ <node id="1345484518" lat="51.5173639" lon="-0.140043">
+  <tag k="amenity" v="university"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="The Frank Herbert Building"/>
+  <tag k="operator" v="University of Cambridge"/>
+ </node>
+```
+
+
 
 ### Other Building types
 <table>
