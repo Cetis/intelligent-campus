@@ -1,12 +1,12 @@
 # Intelligent Campus Service Point Ontology
 
-The Intelligent Campus Mapping ontology is a service point ontology based upon the Open Street Maps concepts of [OpenStreetMap key pairs called tags](https://wiki.openstreetmap.org/wiki/Tags). Each entity in the ontology is made up of at least one required key:value, with sugguested additional key pairs that may be recommended or optional.  
+The Intelligent Campus Mapping ontology is a service point ontology approach based upon the Open Street Maps concepts of [OpenStreetMap key pairs called tags](https://wiki.openstreetmap.org/wiki/Tags). Each entity in the ontology is made up of at least one required key:value, that maps to an OpenStreet Map Tag, sugguested properties of each entity are also OpenStreetMap Tags.
 
-The documentation describes ib in two formats, a GeoJSON JSON object and in Open Street Map XML. Since objects and their properties are derived from popular Open Street Maps tags, users should be able to use which ever is applicable.
+The documentation describes entities in two formats, in a GeoJSON JSON  and in Open Street Map XML. Since objects and their properties are derived from popular Open Street Maps tags, users should be able to use which ever is applicable.
 
-The objects and properties lists are not exhaustive. Implementors may wish to look on the Open Street Map Tag page for an objects for other properties and their key pairs 
+The objects and properties lists are not exhaustive, but are based on popular usage of OpenStreet Map tags. Implementors may wish to look on the [Open Street Map Tag page](https://wiki.openstreetmap.org/wiki/Tags) for additional entities and properties 
 
-- [List of Objects](./items.md)
+- [List of Entities](./items.md)
 - [List of Properties](./properties.md)
 
 ### Useful Tools
