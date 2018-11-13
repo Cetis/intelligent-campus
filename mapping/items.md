@@ -12,8 +12,8 @@ A University should use the [amenity:University](https://wiki.openstreetmap.org/
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q3918">Q3918</a> </td></tr>
 <tr><th align="left">Open Street Map Key pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Duniversity">amenity=university</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"university"</td></tr>
-<tr><th align="left">Recommended properties</th><td><ul><li><a href="./items.md#entrance">Building</a></li><li><a href="./items.md#operator">Name</a></li><li><a href="./items.md#name">Operator</a></li></ul> </td></tr>
-<tr><th align="left">Example properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a></li><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Recommended properties</th><td><ul><li><a href="./items.md#building">Building</a></li><li><a href="./properties.md#operator">Name</a></li><li><a href="./properties.md#name">Operator</a></li></ul> </td></tr>
+<tr><th align="left">Example properties</th><td><ul><li><a href="./properties.md#capacity">Capacity</a></li><li><a href="./properties.md#entrance">Entrance</a></li><li><a href="./properties.md#operator">Operator</a></li><li><a href="./properties.md#name">Name</a></li><li><a href="./properties.md#reference">Reference</a></li><li><a href="./properties.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 #### GeoJSON JSON Example
@@ -59,7 +59,7 @@ A commercial food service should use the [amenity:restaurant](https://wiki.opens
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q777754">Q777754</a> </td></tr>
 <tr><th align="left">Open Street Map Page</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant"> amenity=restaurant</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"restaurant"</td></tr>
-<tr><th align="left">Example properties</th><td><ul><li><a href="./items.md#capacity">Capacity</a></l1><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li><li><a href="./items.md#capacity">Capacity</a></li></ul> </td></tr>
+<tr><th align="left">Example properties</th><td><ul><li><a href="./properties.md#capacity">Capacity</a></l1><li><a href="./properties.md#entrance">Entrance</a></li><li><a href="./properties.md#operator">Operator</a></li><li><a href="./properties.md#name">Name</a></li><li><a href="./properties.md#reference">Reference</a></li><li><a href="./properties.md#wheelchair">Wheelchair</a></li><li><a href="./properties.md#capacity">Capacity</a></li></ul> </td></tr>
 </table>
 
 #### GeoJSON JSON Example
@@ -106,7 +106,7 @@ A commercial food service should use the [amenity:library](https://wiki.openstre
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q13226383">Q13226383</a> </td></tr>
 <tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlibrary"> amenity=library</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"library"</td></tr
-<tr><th align="left">Example Properties</th><td><ul><li><a href="./items.md#opening_hours">Opening Hours</a></li><li><a href="./items.md#operator">Operator</a></li><li><a href="./items.md#name">Name</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Example Properties</th><td><ul><li><a href="./properties.md#opening_hours">Opening Hours</a></li><li><a href="./properties.md#operator">Operator</a></li><li><a href="./properties.md#name">Name</a></li><li><a href="./properties.md#reference">Reference</a></li><li><a href="./properties.md.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 
@@ -152,7 +152,7 @@ Medium sized waste bins should use the [amenity:waste_disposal](https://wiki.ope
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q216530">Q216530</a></td></tr>
 <tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_disposal">amenity=waste_disposal</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"waste_disposal"</td></tr
-<tr><th align="left">Example Properties</th><td><ul><li><a href="./items.md#operator">Operator</a></li></ul> </td></tr>
+<tr><th align="left">Example Properties</th><td><ul><li><a href="./properties.md.md#operator">Operator</a></li></ul> </td></tr>
 </table>
 
 #### GeoJSON JSON Example
@@ -196,7 +196,7 @@ Smaller sized waste bins should use the [amenity:waste_basket](https://wiki.open
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q216530">Q216530</a></td></tr>
 <tr><th align="left">Open Street Map Key Pair</th><td><a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">amenity=waste_basket</a></td></tr>
 <tr><th align="left">Required key pair</th><td>"amenity":"waste_disposal"</td></tr
-<tr><th align="left">Example Properties</th><td><ul><li><a href="./items.md#waste">waste</a></li></ul> </td></tr>
+<tr><th align="left">Example Properties</th><td><ul><li><a href="./properties.md.md#waste">waste</a></li></ul> </td></tr>
 </table>
 
 #### GeoJSON JSON Example
@@ -239,7 +239,7 @@ The building key can be used with most amenitys or if the user cannot find an ap
 <tr><th align="left">Description</th><td>Organised collection of resources</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:building"> building</a></td></tr>
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q41176">Q41176</a> </td></tr>
-<tr><th align="left">Properties</th><td><ul><li><a href="./items.md#entrance">Entrance</a></li><li><a href="./items.md#reference">Reference</a></li><li><a href="./items.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
+<tr><th align="left">Properties</th><td><ul><li><a href="./eop.md#entrance">Entrance</a></li><li><a href="./properties.md.md#reference">Reference</a></li><li><a href="./properties.md.md#wheelchair">Wheelchair</a></li></ul> </td></tr>
 </table>
 
 #### GeoJSON JSON Example

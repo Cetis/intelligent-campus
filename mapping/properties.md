@@ -1,6 +1,7 @@
 
+## Ontology entities
+The intelligent campus ontology is an approach and not an exhaustive list. Entities map to popular OSM key pairs. This list documents popular entities and properties that may be implemented against them. To avoid mirroring the OSM documentation a list of popular entities with of OSM and geoJSON examples are kept here. Implementers may want to check there OSM documentation for other [key pairs](https://wiki.openstreetmap.org/wiki/Tags).
 
-## Properties
 
 ### Capacity
 
