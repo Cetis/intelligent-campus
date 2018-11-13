@@ -232,8 +232,9 @@ Smaller sized waste bins should use the [amenity:waste_basket](https://wiki.open
 
 ### Other Buildings
 
-The building key can be used with most amenitys or if the user cannot find an appropriate amenity key pair, they may use the [building key](https://wiki.openstreetmap.org/wiki/Buildings) key pair. This follows the wide OSM definition of buildings to include other karge outside items such as storage_tanks, static_caravans etc.
+The building key can be used with most amenitys or if the user cannot find an appropriate amenity key pair, they may use the [building key](https://wiki.openstreetmap.org/wiki/Buildings) key pair. This follows the wide OSM definition of buildings to include other large outside items such as storage_tanks, static_caravans etc.
 
+<table>
 <tr><th align="left">label</th><td>Building</td></tr>
 <tr><th align="left">Description</th><td>Organised collection of resources</td></tr>
 <tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:building"> building</a></td></tr>
