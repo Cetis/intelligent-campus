@@ -18,3 +18,9 @@ The simplest way to contribute to the Jisc Intelligent Campus data specification
 4. The change will be discussed by our team and either merged, or kept in the queue, depending on whether more work is required.
 
 You can do all this through the Github GUI, but you're welcome to use any other git tool you prefer.
+
+## The Cetis team
+
+- Alan Paull (alan@cetis.org.uk)
+- David Sherlock (david@cetis.org.uk)
+- Scott Wilson (scott@cetis.org.uk
