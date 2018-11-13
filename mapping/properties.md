@@ -1,6 +1,5 @@
-
 ## Ontology entities
-The intelligent campus ontology is an approach and not an exhaustive list. Entities map to popular OSM key pairs. This list documents popular entities and properties that may be implemented against them. To avoid mirroring the OSM documentation a list of popular entities with of OSM and geoJSON examples are kept here. Implementers may want to check there OSM documentation for other [key pairs](https://wiki.openstreetmap.org/wiki/Tags).
+The intelligent campus ontology is an approach and not an exhaustive list. Properties map to popular OSM key pairs. This list documents popular entities and properties that may be implemented against them. To avoid mirroring the OSM documentation a list of popular entities with of OSM and geoJSON examples are kept here. Implementers may want to check there OSM documentation for other [key pairs](https://wiki.openstreetmap.org/wiki/Tags).
 
 
 ### Capacity
@@ -36,7 +35,6 @@ The intelligent campus ontology is an approach and not an exhaustive list. Entit
 <tr><th align="left">Value Space</th><td></td></tr>
 <tr><th align="left">Example Space</th><td></td></tr>
 <tr><th align="left">Open Street Map</th><td></td></tr>
-<tr><th align="left">Wikidata</th><td>None</a> </td></tr>
 </table>
 
 ### Operator
@@ -63,16 +61,15 @@ The intelligent campus ontology is an approach and not an exhaustive list. Entit
 <tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q147276">Q147276</a> </td></tr>
 </table>
 
-### Reference
+### Waste
 
 <table>
-<tr><th align="left">label</th><td>ref</td></tr>
-<tr><th align="left">Description</th><td>Reference number or code</td></tr>
+<tr><th align="left">label</th><td>Waste</td></tr>
+<tr><th align="left">Description</th><td>Type of waste</td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>Any string</td></tr>
-<tr><th align="left">Example Value</th><td>1</td></tr>
-<tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:ref">ref</a></td></tr>
-<tr><th align="left">Wikidata</th><td> <a href="https://www.wikidata.org/wiki/Q1334113">Q1334113</a> </td></tr>
+<tr><th align="left">Value Space</th><td>trash, oil, drugs, organic, plastic, rubble, dog_excrement, cigarettes</td></tr>
+<tr><th align="left">Example Value</th><td>plastic</td></tr>
+<tr><th align="left">Open Street Map</th><td><a href="https://wiki.openstreetmap.org/wiki/Key:waste">ref</a></td></tr>
 </table>
 
 
