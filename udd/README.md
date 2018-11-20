@@ -2,7 +2,7 @@ _NOTE THIS IS A WORKING DRAFT_
 
 # Intelligent Campus UDD Extension
 
-This the data model for the Intelligent Campus UDD Extension. This is a set of classes that extends the UDD for Learning Analytics 
+This is the data model for the Intelligent Campus UDD Extension. This is a set of classes that extends the UDD for Learning Analytics 
 to include concepts related to the Intelligent Campus.
 
 Specifically, the classes enable different kinds of sensor events to be related to stable entities relating to sites, rooms and bookings.
@@ -83,9 +83,7 @@ For example, a sensor event may contain references to ROOM_ID, STUDENT_ID, and M
 
 In some implementations, sensor events need to be connected within the warehouse.
 
-For example, a sensor event may only contain references to ROOM_ID and a timestamp, 
-howver the event can then be related to a collection of students via correlating the BOOKING via the room and timeframe, and 
-from the BOOKING entity locate the relevent MOD_INSTANCE.
+For example, a sensor event may only contain references to ROOM_ID and a timestamp. However, the event can then be related to a collection of students through correlating the BOOKING via the room and timeframe, and from the BOOKING entity locate the relevent MOD_INSTANCE.
 
 ~~~~
 "context": {
