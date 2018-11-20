@@ -3,7 +3,7 @@ _NOTE THIS IS A WORKING DRAFT_
 # Intelligent Campus UDD Extension
 
 This is the data model for the Intelligent Campus UDD Extension. This is a set of classes that extends the UDD for Learning Analytics 
-to include concepts related to the Intelligent Campus.
+to include concepts related to the Intelligent Campus. A diagram of the data model is [here](https://github.com/Cetis/intelligent-campus/blob/master/udd/Intelligent%20Campus%20UDD%20Extension.png).
 
 Specifically, the classes enable different kinds of sensor events to be related to stable entities relating to sites, rooms and bookings.
 
