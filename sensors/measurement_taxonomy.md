@@ -4,7 +4,7 @@ DRAFT
 This taxonomy is intended to provide the basis for key/value pairs to be used in recording measurements. It is based on the one used in Project Haystacks tags: https://project-haystack.org/tag.
 
 <table>
-<tr><th>key</th><th>value_type</th><th>Description</th></tr>
+<tr><th>key</th><th>scale</th><th>Description</th></tr>
 <tr><td>active</td><td>kW</td><td>Applied to an electrical power point to indicate active power or real power</td><tr>
 <tr><td>angle</td><td>deg</td><td>Indicates an angle measurement.</td><tr>
 <tr><td>apparent</td><td>kVA</td><td>Applied to an electrical power point to indicate apparent power</td><tr>
