@@ -17,6 +17,9 @@ This specification is for the collection of data for the use in Intelligent Camp
 
 # Measurement_Event
 ## Description
+
+See [E-R diagram](measurements E-R diagram.png).
+
 A single instance of a particular type of Measurement taken by a Sensor within a given Context (at a specific point in space and at a specific moment in time or time range through a defined method). A Measurement_Event consists of the Measurement itself, its Sensor and its Context. A Measurement_Event may cover a range of real world data instances, for example a mid-point of a highest and lowest value over a time period, or an average of a series of data points. This may be important to reduce the volume of data transferred.
 
 <table>
