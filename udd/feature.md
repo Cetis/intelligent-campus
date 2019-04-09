@@ -7,6 +7,7 @@ Features are fixed properties of a location - or at least, slowly changing - tha
 * [FEATURE_NAME](#feature_name) 1
 * [SITE_ID](#site_id) 1
 * [ROOM_ID](#room_id) 0..1
+* [ZONE_ID](#zone_id) 0..1
 
 ## Example feature names
 
@@ -60,3 +61,19 @@ String (255)
 
 ### Notes
 If omitted, the feature applies to all rooms for the specified site.
+
+## ZONE_ID
+### Description
+The zone the feature belongs to. 
+
+### Purpose
+To link relational database tables
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+### Notes
+If omitted, the feature applies to all zones for the specified site and/or room.
