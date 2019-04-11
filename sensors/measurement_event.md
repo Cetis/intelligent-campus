@@ -13,7 +13,7 @@ This specification is for the collection of data for the use in Intelligent Camp
 - Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service. This spec now revised to cover the possibility of time ranges or averages over time.
 - Potential issue over averages: do we need to know the time period (eg average temp over an hour), or should we leave that detail to the provider? I favour the latter.
 - Consider a measurement.range property, to show possible or likely ranges of values?
-- Suggestion: add measurement.type property for type of reading, for example "temperature", "humidity", and so on. Currently, this can be inferred from method, but it is almost certainly better to include this explicitly.
+- Consider separating out location (optionally) for static sensors, to avoid data redundancy.
 
 # Measurement_Event
 ## Description
@@ -45,13 +45,13 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
 		<td>Called event_frequency to avoid confusion with wavelenght frequency.</td>
 	</tr>
 	<tr>
-		<td>context.id [1]</td>
+		<td>context.id [0..1]</td>
 		<td>Identifier for this Context. Applies to the delivery of a particular Sensor payload, which may include several Measurement_event items. If there is only 1 data item, Context may be a 1:1 mapping to Measurement_events.</td>
 		<td>string</td>
 		<td>This is currently derived from Safehouse data supplied by Jisc.</td>
 	</tr>
 	<tr>
-		<td>context.location [1]</td>
+		<td>context.location [0..1]</td>
 		<td>Information about the physical location of the Detector, typically a room</td>
 		<td>JSON object</td>
  		<td>Presume mandatory but business rules to determine content.</td>
@@ -113,9 +113,15 @@ An estimate of the value of a natural phenomenon involving a sensor.
 		<td></td>
 	</tr>
 	<tr>
-		<td>measurement.value [1]</td>
+		<td>measurement.type [1]</td>
 		<td>The observed value or returned value (for example an average of observed values) describing the phenomenon</td>
-		<td>Numeric value</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>measurement.value [1]</td>
+		<td>Label for what is being measured (for example, temperature)</td>
+		<td>string</td>
 		<td></td>
 	</tr>
 </table>
