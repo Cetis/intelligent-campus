@@ -119,7 +119,7 @@ An estimate of the value of a natural phenomenon involving a sensor.
 		<td>See <a href="https://github.com/Cetis/intelligent-campus/blob/master/sensors/measurement_taxonomy.md">measurement taxonomy</a> for potential list of values.</td>
 	</tr>
 	<tr>
-		<td>measurement.type [1]</td>
+		<td>measurement.type [0..1]</td>
 		<td>Label for what is being measured (for example, temperature)</td>
 		<td>string</td>
 		<td></td>
