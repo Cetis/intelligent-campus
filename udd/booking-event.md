@@ -1,7 +1,7 @@
 # Booking Event
 
 * [BOOKING_EVENT_ID](#booking_event_id) [1] **
-* [BOOKING_ID](#booking_id) [1]
+* [BOOKING_ID](#booking_id) [0..1]
 * [NAME](#name) [0..1]
 * [ROOM_ID](#room_id) [1]
 * [LAYOUT_ID](#layout_id) [0..1]
@@ -28,9 +28,13 @@ A booking links a Module Instance to a Room, and optionally a Layout for that ro
 A booking is an abstraction of a timetabling entry for a module instance. This specification is derived from the APIs of the
 CELCAT and Syllabus Plus solutions typically used for timetabling by UK providers.
 
+## BOOKING_EVENT_ID
+## Description
+The provider's own ID for the booking event
+
 ## BOOKING_ID
 ### Description
-The provider's own ID for the booking
+The provider's own ID for the booking; used to link an booking_event to a booking
 
 ### Purpose
 To link relational database tables
