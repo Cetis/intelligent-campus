@@ -130,13 +130,13 @@ CLOCKS/Scientia
 ### Format
 Integer
 
-## START_TIME
+## START_DATETIME
 ### Description
-Time when the booked event starts, in HH:MM format.
+Date and Time when the booked event starts, in ISO8601 format.
 
-## END_TIME
+## END_DATETIME
 ### Description
-Time when the booked event ends, in HH:MM format.
+Date and Time when the booked event ends, in ISO8601 format.
 
 ## BOOKING_PERIOD
 ### Description
