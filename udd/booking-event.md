@@ -1,17 +1,14 @@
 # Booking Event
 
-* [BOOKING_ID](#booking_id) [1] **
+* [BOOKING_EVENT_ID](#booking_event_id) [1] **
+* [BOOKING_ID](#booking_id) [1]
 * [NAME](#name) [0..1]
 * [ROOM_ID](#room_id) [1]
 * [LAYOUT_ID](#layout_id) [0..1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [1]
 * [REQUESTED_CAPACITY](#requested_capacity) [0..1]
-* [START_TIME](#start_time) [1]
-* [END_TIME](#end_time) [1]
-* [SPECIFIC_DATE](#specific_date) [0..1]
-* [DAY_OF_WEEK](#day_of_week) [0..1]
-* [WEEKS](#weeks) [0..1]
-* [BOOKING_PERIOD](#event_period) [1]
+* [START_DATETIME](#start_datetime) [1]
+* [END_DATETIME](#end_datetime) [1]
 * [PROVIDED_AT](https://github.com/jiscdev/analytics-udd/blob/master/udd/assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
