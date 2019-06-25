@@ -132,16 +132,20 @@ Integer
 
 ## START_DATETIME
 ### Description
-Date and Time when the booked event starts, in W3C DateTime format.
+Date and Time when the booked event starts, in ISO DateTime format.
 
 ### Format
-W3C DateTime
+ISO 8601 format of:
+
+YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ## END_DATETIME
 ### Description
-Date and Time when the booked event ends, in W3C DateTime format.
+Date and Time when the booked event ends, in ISO DateTime format.
 
 ### Format
-W3C DateTime
+ISO 8601 format of:
+
+YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 
