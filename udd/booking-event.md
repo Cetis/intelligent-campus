@@ -1,4 +1,4 @@
-# Booking Event
+# Booking_Event
 
 * [BOOKING_EVENT_ID](#booking_event_id) [1] **
 * [BOOKING_ID](#booking_id) [0..1]
@@ -13,7 +13,7 @@
 
 \** indicates that the property is the primary key for this entity.
 
-API endpoint name: **booking**
+API endpoint name: **booking_event**
 
 ## Description of booking entity
 
@@ -132,73 +132,16 @@ Integer
 
 ## START_DATETIME
 ### Description
-Date and Time when the booked event starts, in ISO8601 format.
-
-## END_DATETIME
-### Description
-Date and Time when the booked event ends, in ISO8601 format.
-
-## BOOKING_PERIOD
-### Description
-Period to which booking relates (e.g. semester 1)
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
-### Valid Values
-Each different code value in EVENT_PERIOD should have a matching code value in period.PERIOD_CODE.
-
-### Format
-String (255)
-
-### Notes
-It is expected that sites / organisations will have their own code lists for BOOKING_PERIOD values.
-
-## SPECIFIC_DATE
-### Description
-A single specified date to which the booking applies> Use this property if the event is a single non-recurring event, or the event source represents all events as  single events. 
+Date and Time when the booked event starts, in W3C DateTime format.
 
 ### Format
 W3C DateTime
 
-### Derivation
-CLOCKS/Scientia
-
-## DAY_OF_WEEK
+## END_DATETIME
 ### Description
-The day of the week to which the booking applies, if it is a recurring event. Where an event occurs on multiple days per week, use 
-additional EVENT instances.
-
-### Derivation
-CELCAT
-
-### Valid Values
-Week days in lowercase; one of "monday","tuesday","wednesday","thursday","friday","saturday","sunday".
+Date and Time when the booked event ends, in W3C DateTime format.
 
 ### Format
-String (9)
-
-### Notes
-Where no day of week is given, and there is no SPECIFIC_DATE specified, the event is assumed to take place on all days within the period specified.
-
-## WEEKS
-### Description
-The weeks of the period on which the event occurs, if it is a recurring event.
-
-### Derivation
-CELCAT
-
-### Valid Values
-A string of letters 'Y' and 'N' signifying whether the event applies in the week. For example: "YYYYYNNNYYYNNNY"
-
-### Format
-String (255)
-
-### Notes
-Where no values for WEEKS and SPECIFIC_DATE are provided, the booking is assumed to take place on all weeks within the period specified.
-
+W3C DateTime
 
 
