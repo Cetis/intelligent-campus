@@ -17,7 +17,7 @@ API endpoint name: **booking_event**
 
 ## Description of booking entity
 
-A booking links a Module Instance to a Room, and optionally a Layout for that room.
+A Booking Event links a Module Instance to a Room, and optionally a Layout for that room. A Booking Event may be derived from a Booking that contains the metadata relating to a recurring or block booking.
 
 ### Implementation Notes
 
