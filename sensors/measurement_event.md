@@ -144,10 +144,10 @@ Identifies and describes the particular equipment used for the environmental sen
  		<td>Could be IPv4 or IPv6. May need a label to provide this detail.</td>
 	</tr>
 	<tr>
-		<td>sensor.mac [0..1]</td>
-		<td>MAC address of sensor</td>
-		<td>Mac address format: this could be 48-bit or 64-bit hexadecimal or formated to traditional nn:nn:nn:nn:nn:nn or nn:nn:nn:nn:nn:nn:nn:nn.</td>
-		<td>Should we specify? I think we leave it to the provider.</td>
+		<td>sensor.hardware_identifier [0..1]</td>
+		<td>hardware identifier of sensor</td>
+		<td>This could be Mac address in 48-bit or 64-bit hexadecimal or formated to traditional nn:nn:nn:nn:nn:nn or nn:nn:nn:nn:nn:nn:nn:nn; or it could be a hardware_serial, or any other relevant identifier for the sensor available from the data.</td>
+		<td>Provider to supply if necessary</td>
 	</tr>
 	<tr>
 		<td>sensor.name [0..1]</td>
@@ -198,7 +198,7 @@ Identifies and describes the particular equipment used for the environmental sen
     "sensor": {
 	"id": "15",
 	"ip-address": "34.248.41.184",
-	"mac": "008000000000ba34",
+	"hardware_identifier": "008000000000ba34",
 	"name": "safehouse:test",
 	"type": "safehouse"
     }
