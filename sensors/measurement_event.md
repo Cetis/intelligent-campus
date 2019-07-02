@@ -9,11 +9,10 @@ This specification is for the collection of data for the use in Intelligent Camp
 # DEV NOTES
 
 - Consider whether UDD or XAPI style is preferable (XAPI style adopted here).
-- This is based on Safehouse. Others need to be compared.
+- This is based on Safehouse and Lone Rooftop. Others need to be compared.
 - Consider latency. May prefer averages over time (eg average temp over an hour). For limiting data stream. So, time period rather than point in time. Big architecture implications for a Jisc service. This spec now revised to cover the possibility of time ranges or averages over time.
 - Potential issue over averages: do we need to know the time period (eg average temp over an hour), or should we leave that detail to the provider? I favour the latter.
 - Consider a measurement.range property, to show possible or likely ranges of values?
-- Consider separating out location (optionally) for static sensors, to avoid data redundancy.
 
 # Measurement_Event
 ## Description
@@ -42,7 +41,7 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
 		<td>context.event_frequency [0..1]</td>
 		<td>Describes how often the Sensor records the measurement.</td>
 		<td>string</td>
-		<td>Called event_frequency to avoid confusion with wavelenght frequency.</td>
+		<td>Called event_frequency to avoid confusion with wavelength frequency.</td>
 	</tr>
 	<tr>
 		<td>context.id [0..1]</td>
@@ -77,7 +76,7 @@ Describes the Location, Timestamp, Frequency and Transmission Method used by the
 	<tr>
 		<td>context.timestamp [1]</td>
 		<td>Date and time the Measurement was taken.</td>
-		<td>YYYY-MM-DDThh:mm:ss.sssZ</td>
+		<td>YYYY-MM-DDThh:mm[:ss.mmm]Z</td>
 		<td>Might some sensors record timestamp of measurement and timestamp of transmission? Would we need both? In addition, if a range of values is used, we should take whatever relevant timestamp is available.</td>
 	</tr>
 	<tr>
@@ -110,19 +109,19 @@ An estimate of the value of a natural phenomenon involving a sensor.
 		<td>measurement.scale_name [0..1]</td>
 		<td>Label for the commonly-used name of the scale of values (for example, Celsius)</td>
 		<td>string</td>
-		<td></td>
+		<td>See <a href="https://github.com/Cetis/intelligent-campus/blob/master/sensors/measurement_taxonomy.md">measurement taxonomy</a> for potential list of scales.</td>
 	</tr>
 	<tr>
 		<td>measurement.value [1]</td>
 		<td>The observed value or returned value (for example an average of observed values) describing the phenomenon</td>
 		<td>string</td>
-		<td>See <a href="https://github.com/Cetis/intelligent-campus/blob/master/sensors/measurement_taxonomy.md">measurement taxonomy</a> for potential list of values.</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>measurement.type [0..1]</td>
 		<td>Label for what is being measured (for example, temperature)</td>
 		<td>string</td>
-		<td></td>
+		<td>See <a href="https://github.com/Cetis/intelligent-campus/blob/master/sensors/measurement_taxonomy.md">measurement taxonomy</a> for potential list of types.</td>
 	</tr>
 </table>
 
@@ -193,7 +192,8 @@ Identifies and describes the particular equipment used for the environmental sen
         "id": 129,
 	"method": "thermometer",
 	"scale_name": "Celsius",
-        "value": 27.5
+        "value": 27.5,
+	"type": "temp"
     },
     "sensor": {
 	"id": "15",
@@ -212,10 +212,6 @@ Identifies and describes the particular equipment used for the environmental sen
 {
 "measurement_event": {
     "context": {
-        "id": "kccBCAICAQYR/zMBF2QOEAABARoB1gCfAQAJCUQ2QjI3ODiP",
-        "location": {
-            "room_id": "AS34"
-        },
         "timestamp": "2018-07-23T16:27:10.418789Z"
     },
     "measurement": {
