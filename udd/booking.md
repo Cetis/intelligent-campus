@@ -10,7 +10,6 @@
 * [SPECIFIC_DATE](#specific_date) [0..1]
 * [DAY_OF_WEEK](#day_of_week) [0..1]
 * [WEEKS](#weeks) [0..1]
-* [BOOKING_PERIOD](#event_period) [1]
 * [PROVIDED_AT](https://github.com/jiscdev/analytics-udd/blob/master/udd/assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
