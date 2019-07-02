@@ -130,11 +130,13 @@ Integer
 
 ## START_TIME
 ### Description
-Time when the booked event starts, in HH:MM format.
+Time when the booked event starts, in ISO 8601 format.
+YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ## END_TIME
 ### Description
-Time when the booked event ends, in HH:MM format.
+Time when the booked event ends, in ISO 8601 format.
+YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ## BOOKING_PERIOD
 ### Description
@@ -160,7 +162,7 @@ It is expected that sites / organisations will have their own code lists for BOO
 A single specified date to which the booking applies> Use this property if the event is a single non-recurring event, or the event source represents all events as  single events. 
 
 ### Format
-W3C DateTime
+YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ### Derivation
 CLOCKS/Scientia
