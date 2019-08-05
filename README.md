@@ -23,4 +23,5 @@ You can do all this through the Github GUI, but you're welcome to use any other 
 
 - Alan Paull (alan@cetis.org.uk)
 - David Sherlock (david@cetis.org.uk)
+- Li Yuan (li@cetis.org.uk)
 - Scott Wilson (scott@cetis.org.uk
