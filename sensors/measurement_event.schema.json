@@ -1,0 +1,173 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Cetis/intelligent-campus/tree/master/sensors/schema.json",
+  "type": "object",
+  "title": "Jisc/CETIS Intelligent Campus Measurement Event",
+  "required": ["measurement_event"],
+  "properties": {
+    "measurement_event": {
+      "$id": "#/properties/measurement_event",
+      "type": "object",
+      "title": "Measurement Event",
+      "required": ["context", "measurement", "sensor"],
+      "properties": {
+        "context": {
+          "$id": "#/properties/measurement_event/properties/context",
+          "type": "object",
+          "title": "Context",
+          "properties": {
+            "event_frequency": {
+              "$id": "#/properties/measurement_event/properties/context/properties/event_frequency",
+              "type": "string",
+              "title": "Event Frequency",
+              "examples": ["hourly"],
+              "pattern": "^(.*)$"
+            },
+            "id": {
+              "$id": "#/properties/measurement_event/properties/context/properties/id",
+              "type": "string",
+              "title": "ID",
+              "examples": ["kccBCAICAQYR/zMBF2QOEAABARoB1gCfAQAJCUQ2QjI3ODiP"],
+              "pattern": "^(.*)$"
+            },
+            "location": {
+              "$id": "#/properties/measurement_event/properties/context/properties/location",
+              "type": "object",
+              "title": "Location",
+              "required": ["room_id"],
+              "properties": {
+                "room_id": {
+                  "$id": "#/properties/measurement_event/properties/context/properties/location/properties/room_id",
+                  "type": "string",
+                  "title": "Room ID",
+                  "examples": ["AS34"],
+                  "pattern": "^(.*)$"
+                },
+                "sensorLocation": {
+                  "$id": "#/properties/measurement_event/properties/context/properties/location/properties/sensorLocation",
+                  "type": "object",
+                  "title": "Sensor Location",
+                  "required": ["type", "geometry"],
+                  "properties": {
+                    "type": {
+                      "$id": "#/properties/measurement_event/properties/context/properties/location/properties/sensorLocation/properties/type",
+                      "type": "string",
+                      "title": "Type",
+                      "examples": ["Feature"],
+                      "pattern": "^(.*)$"
+                    },
+                    "geometry": {
+                      "$id": "#/properties/measurement_event/properties/context/properties/location/properties/sensorLocation/properties/geometry",
+                      "type": "object",
+                      "title": "Geometry"
+                    }
+                  }
+                },
+                "site_id": {
+                  "$id": "#/properties/measurement_event/properties/context/properties/location/properties/site_id",
+                  "type": "string",
+                  "title": "Site ID",
+                  "examples": ["Main1234"],
+                  "pattern": "^(.*)$"
+                }
+              }
+            },
+            "timestamp": {
+              "$id": "#/properties/measurement_event/properties/context/properties/timestamp",
+              "type": "string",
+              "format": "date-time",
+              "title": "Timestamp",
+              "examples": ["2018-07-23T16:27:10.418789Z"]
+            },
+            "transmission": {
+              "$id": "#/properties/measurement_event/properties/context/properties/transmission",
+              "type": "string",
+              "title": "Transmission",
+              "examples": ["WiFi"],
+              "pattern": "^(.*)$"
+            }
+          },
+          "required": ["id", "location", "timestamp"]
+        },
+        "measurement": {
+          "$id": "#/properties/measurement_event/properties/measurement",
+          "type": "object",
+          "title": "Measurement",
+          "required": ["id", "value"],
+          "properties": {
+            "id": {
+              "$id": "#/properties/measurement_event/properties/measurement/properties/id",
+              "type": "integer",
+              "title": "ID",
+              "examples": [129]
+            },
+            "method": {
+              "$id": "#/properties/measurement_event/properties/measurement/properties/method",
+              "type": "string",
+              "title": "Method",
+              "examples": ["thermometer"],
+              "pattern": "^(.*)$"
+            },
+            "scale_name": {
+              "$id": "#/properties/measurement_event/properties/measurement/properties/scale_name",
+              "type": "string",
+              "title": "Scale Name",
+              "examples": ["Celsius"],
+              "pattern": "^(.*)$"
+            },
+            "value": {
+              "$id": "#/properties/measurement_event/properties/measurement/properties/value",
+              "type": "number",
+              "title": "Value",
+              "examples": [27.5]
+            }
+          }
+        },
+        "sensor": {
+          "$id": "#/properties/measurement_event/properties/sensor",
+          "type": "object",
+          "title": "Sensor Detail",
+          "required": ["id", "ip-address", "mac", "name", "type"],
+          "properties": {
+            "id": {
+              "$id": "#/properties/measurement_event/properties/sensor/properties/id",
+              "type": "string",
+              "title": "ID",
+              "examples": ["15"],
+              "pattern": "^(.*)$"
+            },
+            "ip-address": {
+              "$id": "#/properties/measurement_event/properties/sensor/properties/ip-address",
+              "type": "string",
+              "title": "IP Address",
+              "examples": ["34.248.41.184"],
+              "pattern": "^(.*)$"
+            },
+            "mac": {
+              "$id": "#/properties/measurement_event/properties/sensor/properties/mac",
+              "type": "string",
+              "title": "MAC",
+              "examples": ["008000000000ba34"],
+              "pattern": "^(.*)$"
+            },
+            "name": {
+              "$id": "#/properties/measurement_event/properties/sensor/properties/name",
+              "type": "string",
+              "title": "Name",
+              "examples": ["safehouse:test"],
+              "pattern": "^(.*)$"
+            },
+            "type": {
+              "$id": "#/properties/measurement_event/properties/sensor/properties/type",
+              "type": "string",
+              "title": "Type",
+              "examples": ["safehouse"],
+              "pattern": "^(.*)$"
+            }
+          }
+        }
+      }
+    }
+  }
+}
